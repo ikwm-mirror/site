@@ -1,12 +1,13 @@
 Site {
-    .title = "ikwm",
-    .host_url = "https://example.com",
-    .content_dir_path = "content",
-    .layouts_dir_path = "layouts",
-    .assets_dir_path = "assets",
-    .static_assets = [
-      "ikwm.png",
-      "tiled.png",
-      "float.png"
-    ],
+  .title = "ikwm",
+  .host_url = "https://ikwm.sharflare.dev",
+  .content_dir_path = "content",
+  .layouts_dir_path = "layouts",
+  .assets_dir_path = "assets",
+  .static_assets = [
+    "ikwm.png",
+    "tiled.png",
+    "float.png",
+    "sitemap.xml",
+  ],
 }

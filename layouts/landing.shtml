@@ -10,7 +10,7 @@
         <p class="tagline" :text="$page.description"></p>
         <div class="hero-actions">
           <a href="$site.page('docs').link()">get started <i class="ph ph-arrow-right"></i></a>
-          <a href="https://codeberg.org/ikwm/ik">github</a>
+          <a href="https://codeberg.org/ikwm/ik">code</a>
         </div>
       </div>
       <div :html="$page.content()"></div>
