@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head id="head">
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1">
+  <title :text="$site.title"></title>
+  <link type="text/css" rel="stylesheet" href="$site.asset('sakura-vader.css').link()">
+  <link type="text/css" rel="stylesheet" href="$site.asset('style.css').link()">
+  <link type="text/css" rel="stylesheet" href="$site.asset('highlight.css').link()">
+  <link rel="icon" type="image/png" href="$site.asset('ikwm.png').link()">
+
+  <!--- Phosphor Icons --->
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css">
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css">
+  <super>
+</head>
+
+<body id="body">
+  <nav>
+    <a class="site-title" href="$site.page('').link()" :text="$site.title"></a>
+    <div class="nav-links">
+      <a href="$site.page('changelog').link()">changelog</a>
+      <a href="$site.page('docs').link()">docs</a>
+    </div>
+  </nav>
+  <super>
+    <footer>
+      <hr>
+      <small>
+        <i class="ph-fill ph-lightning"></i>
+        lightning fast with <a href="https://zine-ssg.io">zine</a>
+      </small>
+    </footer>
+</body>
+
+</html>
+
+<!-- vim: set filetype=html : -->

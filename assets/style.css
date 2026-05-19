@@ -1,0 +1,70 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.hero {
+  margin: 4rem 0;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.tagline {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+/* --- Link hover animations --- */
+a {
+  position: relative;
+  text-decoration: none;
+}
+
+a::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: #d9d8dc;
+  transition: width 0.2s ease;
+  translate: -50%;
+}
+
+a:hover::after {
+  width: 100%;
+}
+
+a:hover {
+  border-bottom: none;
+}
+
+/* --- Footer --- */
+footer {
+  text-align: center;
+}
+
+footer i {
+  vertical-align: middle;
+}
+
+/* --- Hero --- */
+.hero-actions i {
+  vertical-align: middle;
+}

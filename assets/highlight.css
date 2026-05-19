@@ -1,0 +1,42 @@
+:root {
+  --keyword: #ed9099;
+  --type: #f0b8bc;
+  --string: #c9a96e;
+  --numeric: #d4879c;
+  --function: #d9d8dc;
+  --comment: #7a6568;
+  --cyan: #b5888f;
+}
+
+pre {
+  border-top: 1px solid #40363a;
+  border-bottom: 1px solid #40363a;
+  background: #40363a;
+  padding: 10px 5px;
+}
+
+code.ziggy {
+  color: var(--cyan);
+}
+
+code.ziggy .keyword,
+code.ziggy .type {
+  color: var(--keyword);
+}
+
+code.ziggy .string {
+  color: var(--string);
+}
+
+code.ziggy .numeric.constant {
+  color: var(--numeric);
+}
+
+code.ziggy .function {
+  color: var(--function);
+}
+
+code.ziggy .comment {
+  color: var(--comment);
+  font-style: italic;
+}

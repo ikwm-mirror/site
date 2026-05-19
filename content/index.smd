@@ -1,0 +1,43 @@
+---
+.title = "ikwm",
+.description = "a small bsp tiling compositor built on neuswc",
+.date = @date("2026-05-19T00:00:00"),
+.layout = "landing.shtml",
+.author = "shar",
+---
+
+ikwm is a lightweight Wayland compositor built on [neuswc]($link.url('https://git.sr.ht/~shrub900/neuswc')) with a binary space partitioning layout engine, a modal keybind system, and powerful IPC. everything is configurable at runtime, no recompile needed.
+
+# []($section.id('screenshots'))
+
+[]($image.siteAsset('tiled.png'))
+*tiled mode - windows split the available space automatically via BSP*
+
+[]($image.siteAsset('float.png'))
+*float mode - windows move and resize freely via mouse binds*
+
+# []($section.id('features'))
+
+## Layout
+
+BSP tiling splits available space automatically on every new window. split direction, ratio (0.1–0.9), and rotation are all controllable per node. inner and outer gaps are configurable. windows can be toggled between tiled, floating, and fullscreen at any time.
+
+## Workspaces
+
+up to 10 workspaces with configurable count at runtime. move any focused window to any workspace.
+
+## Input
+
+define any number of modes and bind keys within them, all at runtime via IPC. mouse binds support mod+button combos.
+
+## Focus
+
+focus follows mouse by default. cycle focus forward/backward within a workspace or jump directionally (left/right/up/down) using BSP node geometry. swap nodes in any direction.
+
+## Candy
+
+server-side decorations with per window toggles. dual border system, independent inner and outer borders with separate color and width for active and normal states. wallpaper color configurable at runtime.
+
+## Autostart
+
+`~/.config/ikwm/ikrc` is executed on startup. override path with `IKWM_AUTOSTART`. re-run at any time with `wm reload`.

@@ -1,0 +1,6 @@
+---
+.title = "Changelog",
+.date = @date("2026-05-19T00:00:00"),
+.layout = "changelog.shtml",
+.author = "shar",
+---

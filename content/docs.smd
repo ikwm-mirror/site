@@ -1,0 +1,6 @@
+---
+.title = "Docs",
+.date = @date("2026-05-19T00:00:00"),
+.layout = "docs.shtml",
+.author = "shar",
+---
